@@ -5,11 +5,7 @@ library(tidyverse)
 library(ospsuite)
 library(plotly)
 
-options(
-  shiny.maxRequestSize = 30 * 1024^2,
-  shiny.host = "0.0.0.0",
-  shiny.port = 8180
-  )
+options(shiny.maxRequestSize = 30 * 1024^2)
 
 # Shiny app that loads a pkml file and displays its parameter in a table
 ui <- page_navbar(
